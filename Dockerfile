@@ -1,4 +1,4 @@
-WORKDIR /code
+ WORKDIR /code
 
  COPY ./requirements.txt /code/requirements.txt
 
@@ -16,5 +16,3 @@ EXPOSE 7860
  # The CMD instruction specifies the command to run when the container starts
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "7860"]
 
-
-has context menu
